@@ -16,6 +16,15 @@
 # users commonly want.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+
+# Enable SimpleCov for Rails
+# [colszowka/simplecov: Code coverage for Ruby 1.9+ with a powerful configuration library and automatic merging of coverage across test suites](https://github.com/colszowka/simplecov)
+require 'simplecov'
+SimpleCov.start 'rails'
+# Send code coverage to Code Climate
+require 'codeclimate-test-reporter'
+CodeClimate::TestReporter.start
+
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest

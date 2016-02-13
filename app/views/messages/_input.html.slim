@@ -1,0 +1,9 @@
+= form_for(@message) do |f|
+  - if @message.errors.any?
+    - @message.errors.full_messages.each do |msg|
+      p = msg
+
+  = f.label :message
+  = f.text_field :message
+
+  = f.submit 'post'

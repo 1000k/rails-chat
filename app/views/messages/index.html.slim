@@ -1,5 +1,8 @@
 h1 Messages
 
+= render 'input'
 
--@messages.each do |m|
-  p =m.message
+- @messages.each do |m|
+  p
+    = m.message
+    date = m.created_at

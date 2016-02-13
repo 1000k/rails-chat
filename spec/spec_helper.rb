@@ -1,3 +1,6 @@
+require 'factory_girl_rails'
+require 'capybara/rspec'
+
 # Enable SimpleCov and send code coverage to Code Climate
 # [colszowka/simplecov: Code coverage for Ruby 1.9+ with a powerful configuration library and automatic merging of coverage across test suites](https://github.com/colszowka/simplecov)
 require 'simplecov'
@@ -24,6 +27,8 @@ CodeClimate::TestReporter.start
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
+  config.include FactoryGirl::Syntax::Methods
+
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.

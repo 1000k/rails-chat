@@ -26,6 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+gem 'slim-rails', '~> 3.0.1'
+gem 'ffaker', '~> 2.2.0'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
@@ -35,7 +38,9 @@ gem 'bcrypt', '~> 3.1.7'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 3.4.2'
+  gem 'capybara', '~> 2.6.2'
+  gem 'factory_girl_rails'
 
   # Estimate code coverage and report to Code Climate
   # See [Code Climate + Circle CI でRubyプロジェクトのコードカバレッジを計測する手順 - うなの日記](http://unageanu.hatenablog.com/entry/2015/03/22/144950)

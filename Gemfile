@@ -39,6 +39,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'rspec-rails'
+  gem 'factory_girl_rails'
 
   # Estimate code coverage and report to Code Climate
   # See [Code Climate + Circle CI でRubyプロジェクトのコードカバレッジを計測する手順 - うなの日記](http://unageanu.hatenablog.com/entry/2015/03/22/144950)

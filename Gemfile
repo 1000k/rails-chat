@@ -41,6 +41,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.4.2'
   gem 'capybara', '~> 2.6.2'
   gem 'factory_girl_rails'
+  gem 'guard'
+  gem 'guard-rspec'
 
   # Estimate code coverage and report to Code Climate
   # See [Code Climate + Circle CI でRubyプロジェクトのコードカバレッジを計測する手順 - うなの日記](http://unageanu.hatenablog.com/entry/2015/03/22/144950)

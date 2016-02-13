@@ -6,7 +6,7 @@ RSpec.describe MessagesController, type: :controller do
   end
 
   describe '#index' do
-    it 'return index' do
+    it 'returns index' do
       get :index
       expect(response).to render_template(:index)
     end

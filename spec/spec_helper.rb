@@ -1,4 +1,5 @@
 require 'factory_girl_rails'
+require 'capybara/rspec'
 
 # Enable SimpleCov and send code coverage to Code Climate
 # [colszowka/simplecov: Code coverage for Ruby 1.9+ with a powerful configuration library and automatic merging of coverage across test suites](https://github.com/colszowka/simplecov)
